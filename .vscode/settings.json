@@ -1,0 +1,23 @@
+{
+	"launch": {
+		"configurations": [
+			{
+				"name": "Debug Website",
+				"type": "chrome",
+				"request": "launch",
+				"url": "http://127.0.0.1:3000/"
+			}
+		]
+	},
+	"cSpell.words": [
+		"dbaeumer",
+		"htmlhint",
+		"kohler",
+		"mkaufman",
+		"qunit"
+	],
+	"eslint.format.enable": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	}
+}
