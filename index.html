@@ -3,15 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hello World!</title>
+  <title>StarTask</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Gluten' rel='stylesheet'>
+  <link rel="icon" href="/img/star.png">
 </head>
 
 <body>
-  <h1>HTML Rocks!</h1>
-  <img src="img/compile.jpeg">
+  <h1 id="login-h1">StarTask</h1>
+  <div id="login-box">
+    <h2>LOGIN</h2>
+    <div id="login-input">
+
+      <div class="input-group">
+        <img id="user-img" src="img/user.png" alt="user icon">
+        <input id="login-username" name="login-username" type="text" placeholder="Username...">
+      </div>
+
+      <div class="input-group">
+        <img id="password-img" src="img/password.png" alt="password icon">
+        <input id="login-password" name="login-password" type="password"  placeholder="Password...">
+        <img src="img/eye.png" alt="show password" id="toggle-password" style="cursor: pointer">
+      </div>
+    </div>
+
+    <button id="login-btn">Login</button>
+    <p>This is not a real login page,<br> just click <em>Login</em> to continue <br>to the rest of the site!</p>
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 

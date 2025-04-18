@@ -16,3 +16,29 @@ function loaded() {
 export function sayHello() {
     return 'hello';
 }
+
+// when user clicks login, go to new page
+document.addEventListener("DOMContentLoaded", () => {
+    const loginBtn = document.getElementById("login-btn");
+
+    loginBtn.addEventListener("click", () => {
+        window.location.href="home.html";
+    });
+});
+
+// toggles the eye icon for the password
+export function passwordFunction() {
+    const passwordInput = document.getElementById("login-password");
+    const toggleIcon = document.getElementById("toggle-password");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.src = "img/hidden.png";
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.src = "img/eye.png"
+    }
+  }
+  document.getElementById("toggle-password").addEventListener("click", passwordFunction);
+
+

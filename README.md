@@ -15,3 +15,8 @@ Once the website is fully functional, there are several stretch goals that I can
 ## Project Wireframe
 
 ![wireframe](wireframe.png)
+
+## Sources
+* https://www.w3schools.com/howto/tryit.asp?font=Bagel%20Fat%20One
+* https://www.w3schools.com/howto/tryit.asp?font=Gluten
+* https://www.flaticon.com/

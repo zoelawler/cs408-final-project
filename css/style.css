@@ -1,4 +1,170 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+html {
+  margin: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgb(80, 78, 170), rgb(221, 241, 255));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#login-h1 {
+  font-size: 90px;
+  margin-top: 10px;
+  margin-bottom: -90px;
+}
+h1 {
+  text-align: center;
+  font-family: 'Bagel Fat One';
+  color: white;
+  letter-spacing: 4px;
+  font-size: 75px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#login-box h2 {
+  margin: 50px 0 0 0;
+  font-family: 'Gluten';
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+#login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.20);
+  font-family: 'Gluten';
+}
+
+#login-box p {
+  margin-top: -50px;
+  text-align: center;
+  color: rgba(80, 78, 170, 0.5);
+  
+}
+#login-box em {
+  color: rgba(80, 78, 170, 0.75);
+}
+
+#login-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(80, 78, 170);
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgb(80, 78, 170);
+  transition: all .4s ease-in-out;
+  font-family: 'Gluten';
+}
+
+#login-btn:hover{
+  cursor: pointer;
+  color: rgb(80, 78, 170);
+  background-color: rgb(221, 241, 255);
+  transform: scale(1.1);
+}
+
+#login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; 
+  align-items: center;
+  width: 75%;
+  margin-bottom: -70px;
+}
+
+.input-group {
+  position: relative;
+  font-family: 'Gluten';
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-group #password-img, #user-img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgb(80, 78, 170);
+  font-family: 'Gluten';
+  font-size: 16px;
+  padding: 10px 40px 10px 40px;
+  letter-spacing: 3px;
+}
+
+
+input::placeholder {
+  color: rgb(190, 210, 225);
+}
+
+input[type="password"] {
+  font-family: 'Gluten';
+  letter-spacing: 3px;
+}
+
+.input-group #toggle-password {
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: rgb(80, 78, 170);
+  padding: 1em;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  font-family: 'Gluten';
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+  transition: all .4s ease-in-out;
+  display: inline-block;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: rgb(190, 210, 225);
+  transform: scale(1.1);
+} 
