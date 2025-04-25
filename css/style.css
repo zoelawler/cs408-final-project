@@ -4,17 +4,19 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   margin: 0;
   background-image: linear-gradient(rgb(80, 78, 170), rgb(221, 241, 255));
+  height: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #login-h1 {
   font-size: 90px;
   margin-top: 10px;
   margin-bottom: -90px;
+  padding-bottom: 125px;
 }
 h1 {
   text-align: center;
@@ -23,6 +25,18 @@ h1 {
   letter-spacing: 4px;
   font-size: 75px;
   padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Bagel Fat One';
+  color: white;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding-top: 20px;
   text-align: center;
   margin: 0 auto;
 }
@@ -58,6 +72,19 @@ h1 {
 }
 #login-box em {
   color: rgba(80, 78, 170, 0.75);
+}
+
+button {
+  margin: 30px auto;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(80, 78, 170);
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgb(80, 78, 170);
+  transition: all .4s ease-in-out;
+  font-family: 'Gluten';
 }
 
 #login-btn {
@@ -155,7 +182,7 @@ nav li {
 
 nav a {
   font-family: 'Gluten';
-  font-size: 35px;
+  font-size: 1.6rem;
   color: white;
   text-decoration: none;
   padding: .5em 1em;
@@ -168,3 +195,123 @@ nav a:hover {
   color: rgb(190, 210, 225);
   transform: scale(1.1);
 } 
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Gluten';
+}
+
+thead tr {
+  background-color: rgb(80, 78, 170);
+  color: white;
+}
+
+th, td {
+  font-size: 18px;
+  height: 50px;
+  width: 75px;
+  padding: 12px 15px;
+}
+#add-task-button {
+  margin: 30px auto;
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(80, 78, 170);
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgb(80, 78, 170);
+  transition: all .4s ease-in-out;
+  font-family: 'Gluten';
+}
+#add-task-button:hover{
+  cursor: pointer;
+  background-color: rgb(50, 48, 112);
+  border-color: rgb(50, 48, 112);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(50, 48, 112);
+  border-color: rgb(50, 48, 112);
+}
+
+#table-body {
+  background-color: white;
+  text-align: center;
+}
+
+#delete-icon {
+  width: 25px;
+}
+
+#delete-icon:hover {
+  cursor: pointer;
+}
+
+.modal {
+  background-color: rgba(0,0,0, 0.3);
+  opacity: 0;
+  top:0;
+  left: 0;
+  bottom:0 ;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  opacity:1;
+  z-index: 999;
+}
+
+#add-task-modal {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5px;
+}
+
+.inner-modal {
+  border-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 400px;
+  background-color: white;
+}
+
+.inner-modal h2 {
+  color: rgb(80, 78, 170);
+}
+
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  padding: 10px 0;
+}
+.modal-input label {
+  padding-top: 20px;
+  font-family: 'Gluten';
+}
+
+.modal-input input {
+  font-family: 'Gluten';
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(80, 78, 170);
+  width: 80%; 
+}
