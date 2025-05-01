@@ -12,6 +12,17 @@ body {
   background-size: cover;
 }
 
+.home-paragraph {
+  font-family: 'Gluten';
+  font-size: 20px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
 #login-h1 {
   font-size: 90px;
   margin-top: 10px;
@@ -142,8 +153,6 @@ button {
   padding: 10px 40px 10px 40px;
   letter-spacing: 3px;
 }
-
-
 input::placeholder {
   color: rgb(190, 210, 225);
 }
@@ -152,7 +161,6 @@ input[type="password"] {
   font-family: 'Gluten';
   letter-spacing: 3px;
 }
-
 .input-group #toggle-password {
   position: absolute;
   right: 12px;
@@ -160,12 +168,9 @@ input[type="password"] {
   height: 20px;
   cursor: pointer;
 }
-
 nav {
   background-color: rgb(80, 78, 170);
   padding: 1em;
-  position: sticky;
-  top: 0;
 }
 
 nav ul {
@@ -189,7 +194,6 @@ nav a {
   transition: all .4s ease-in-out;
   display: inline-block;
 }
-
 nav a:hover {
   cursor: pointer;
   color: rgb(190, 210, 225);
@@ -245,11 +249,9 @@ button:hover{
   text-align: center;
 }
 
-#delete-icon {
+.delete-icon, .edit-icon {
   width: 25px;
-}
-
-#delete-icon:hover {
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -288,6 +290,7 @@ button:hover{
   text-align: center;
   width: 400px;
   background-color: white;
+  position: relative;
 }
 
 .inner-modal h2 {
@@ -308,10 +311,62 @@ button:hover{
   font-family: 'Gluten';
 }
 
+#due-date {
+  width: 115px;
+  cursor: pointer;
+}
+
+#task-status {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Gluten';
+  border: 1px solid rgb(80, 78, 170);
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
 .modal-input input {
   font-family: 'Gluten';
   padding: 15px;
   border-radius: 10px;
   border: 1px solid rgb(80, 78, 170);
   width: 80%; 
+}
+
+
+#close-modal {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.search-container {
+  display: flex;
+  align-items: center;  
+  justify-content: flex-end; /* push search to the right */
+  gap: 10px;
+  width: 90%; /* match the table width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+#search-icon {
+  width: 20px;
+  height: 20px;
+}
+.search-container input {
+  font-family: 'Gluten';
+  padding: 10px;
+  border: 1px solid rgb(80, 78, 170);
+  border-radius: 10px;
+}
+
+#star-gif {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 50px;
 }

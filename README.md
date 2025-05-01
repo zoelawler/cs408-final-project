@@ -17,6 +17,11 @@ Once the website is fully functional, there are several stretch goals that I can
 ![wireframe](wireframe.png)
 
 ## Sources
+* I used a lot of the previous labs as sources as well
 * https://www.w3schools.com/howto/tryit.asp?font=Bagel%20Fat%20One
 * https://www.w3schools.com/howto/tryit.asp?font=Gluten
 * https://www.flaticon.com/
+* https://www.w3schools.com/tags/tag_select.asp
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/date
+* https://tenor.com/view/gif-discord-cute-stars-gif-2718049551317757552
+* https://www.w3schools.com/howto/howto_css_modals.asp

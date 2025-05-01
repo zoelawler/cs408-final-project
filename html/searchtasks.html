@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>StarTask</title>
+  <meta name="description" content="StarTask is a task management website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Gluten' rel='stylesheet'>
+  <link rel="icon" href="/img/star.png">
+</head>
+
+<body>
+  <div>
+    <h1>Search Tasks</h1>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a href="/html/home.html">Home</a>
+        </li>
+        <li>
+          <a href="/html/mytasks.html">My Tasks</a>
+        </li>
+        <li>
+          <a href="/html/completedtasks.html">Completed Tasks</a>
+        </li>
+        <li>
+          <a href="">Search Tasks</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+
+  <div class="table-container">
+    <div class="search-container">
+      <img src="/img/search.png" alt="search icon" id="search-icon">
+      <input type="text" id="search-input" placeholder="Search by Task Name...">
+    </div>
+
+    <div id="main-table">
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Tasks</th>
+            <th>Description</th>
+            <th>Date Created</th>
+            <th>Status</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <script type="module" src="/js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>StarTask</title>
-    <meta name="description" content="">
+    <meta name="description" content="StarTask is a task management website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Gluten' rel='stylesheet'>
     <link rel="icon" href="/img/star.png">
 </head>
@@ -15,26 +15,25 @@
 <body>
 
     <div>
-        <h1>StarTask</h1>
+        <h1>My Tasks</h1>
         <nav id="nav-bar">
             <ul>
                 <li>
-                    <a href="home.html">Home</a>
+                    <a href="/html/home.html">Home</a>
                 </li>
                 <li>
-                    <a href="mytasks.html">My Tasks</a>
+                    <a href="">My Tasks</a>
                 </li>
                 <li>
-                    <a href="">Completed Tasks</a>
+                    <a href="/html/completedtasks.html">Completed Tasks</a>
                 </li>
                 <li>
-                    <a href="">Edit Task</a>
+                    <a href="/html/searchtasks.html">Search Tasks</a>
                 </li>
             </ul>
         </nav>
     </div>
 
-    <h2>Welcome to your tasks</h2>
     <div class="table-container">
         <div id="main-table">
             <table id="task-table">
@@ -56,28 +55,31 @@
 
         <div class="modal" id="modal">
             <div class="inner-modal">
-                <button id="close-modal"">close</button> <!-- going to change this -->
-                <h2>Add New Item to Database</h2>
-                <div class="modal-input">
+                <img src="/img/close.png" alt="close modal" id="close-modal"">
+                <h2 id="modal-title">Add a New Task</h2>
+                <div class=" modal-input">
                     <label for="task-name">Task Name:</label>
-                    <input type="text" id="task-name" required>
-    
+                    <input type="text" id="task-name" placeholder="Task Name...">
+
                     <label for="description">Description:</label>
-                    <input type="text" id="description" required>
-    
+                    <input type="text" id="description" placeholder="Description...">
+
                     <label for="due-date">Due Date:</label>
-                    <input type="text" id="due-date">
-    
-                    <label for="status">Status:</label>
-                    <input type="text" id="status">
+                    <input type="date" id="due-date">
+
+                    <label for="task-status">Status:</label>
+                    <select name="task-status" id="task-status">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
                 </div>
 
                 <button id="send-data">Add Task</button>
             </div>
         </div>
-    </div>
 
-    <script type="module" src="js/main.js"></script>
+        <script type="module" src="/js/main.js" defer></script>
 </body>
 
 </html>
